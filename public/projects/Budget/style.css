@@ -1,0 +1,69 @@
+@import "/Css/Main.css";
+html, body {
+    overflow-x: hidden;
+    color: var(--morning);
+}
+
+*, *::before, *::after {
+  position: relative;
+  box-sizing: border-box;
+}
+.finance-container table{
+  margin: auto;
+}
+.Scenery{
+  height: 275px;
+  width: 100%;
+
+}
+.finance-container {
+  padding: 10% 25px;
+}
+.finance-container table,
+.finance-container td,
+.finance-container th{
+  border: 1px solid var(--morning);
+  padding: .25em;
+  border-collapse: collapse;
+}
+.finance-container .no-records td{
+  text-align: center;
+  padding: 2em;
+}
+.finance-container tr.income td:nth-child(3)::before {
+  content: "+";
+}
+.finance-container tr.income td:nth-child(3) {
+  color: limegreen;
+}
+.finance-container tr.outcome td:nth-child(3) {
+  color: red;
+}
+
+.finance-container tr.outcome td:nth-child(3)::before {
+  content: "-";
+}
+
+.finance-container td {
+  font-size: .85em;
+}
+
+.finance-container input,
+.finance-container select,
+.finance-container button{
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--morning);
+}
+.finance-container select#type option{
+  background: var(--land);
+}
+.finance-container input::placeholder{
+  opacity: 1;
+  color: var(--morning);
+}
+
+.finance-container .no-records:not(:last-child) {
+  display: none;
+}

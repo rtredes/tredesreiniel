@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finance</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="/Js/Definitions.js"></script>
+  <script defer src="/Js/Canvas.js"></script>
+  <script defer src="/Js/Home.js" type="module"></script>
+  <script defer src="main.js"></script>
+
+</head>
+
+<body>
+  <div class="head"></div>
+  <div class="finance-container">
+    <table>
+      <thead>
+        <th>ID</th>
+        <th>Desc</th>
+        <th>Cost</th>
+        <th>Type</th>
+      </thead>
+      <tbody>
+        <tr class="no-records">
+          <td colspan="4">No Records</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr><td colspan="4"></td></tr>
+        <tr>
+          <th>Input:</th>
+          <td><input type="text" id="desc" placeholder="Desc"></td>
+          <td><input type="number" id="cost" placeholder="Cost"></td>
+          <td>
+            <select id="type">
+              <option value="outcome">Out</option>
+              <option value="income">In</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td></td>
+          <td id="totalToday">...</td>
+          <td><button id="submit">Submit</button></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</body>
+</html>
