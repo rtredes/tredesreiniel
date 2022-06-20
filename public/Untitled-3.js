@@ -14,3 +14,5 @@ function numberToLetter(inp){
     console.log(result.join(', '))
     console.log( 'Total Unique Words: ' + unique)
 }
+
+/*Testing*/
