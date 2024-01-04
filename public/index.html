@@ -2,55 +2,215 @@
 <html lang="en">
 
 <head>
-  <title>RTredes</title>
-  <!-- Meta -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:description" content="He who writes in the language of logic." />
-  <meta property="og:title" content="RTredes" />
-  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/tredesreiniel.appspot.com/o/public%2FScenery512.png?alt=media&token=abe3f2c7-29ea-4082-86c7-1beb53ca1041" />
-  <meta property="og:url" content="https://TredesReiniel.web.app" />
-  <meta property="og:type" content="website" />
-  <!-- Twitter -->
-  <meta name="twitter:title" content="RTredes">
-  <meta name="twitter:description" content="He who writes in the language of logic.">
-  <meta name="twitter:image" content=" https://firebasestorage.googleapis.com/v0/b/tredesreiniel.appspot.com/o/public%2FScenery512.png?alt=media&token=abe3f2c7-29ea-4082-86c7-1beb53ca1041">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Style -->
-  <link rel="stylesheet" href="Css/Main.css">
-  <link rel="stylesheet" href="Css/Home.css">
-  <link rel="icon" href="/favicon.ico">
-  <link rel="manifest.json" href="/manifest.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reiniel Tredes</title>
 
-  <script defer src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
-  <script defer src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
-  <script defer src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
-  <script defer src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
-  <!-- Script -->
-  <script defer src="https://kit.fontawesome.com/f8adb2bea5.js" crossorigin="anonymous"></script>
-  <script defer src="/Js/Definitions.js"></script>
-  <script defer src="/Js/Canvas.js"></script>
-  <script defer src="/Js/Main.js" type="module"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+        integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"
+        integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="/js/script.js"></script>
 </head>
 
 <body>
-  <div class="head"></div>
-  <div class="body">
-    <div class="intro">
-      <h1>Hello, World.</h1>
-      <h2>My name is <span typewritting>Reiniel Tredes</span></h2>
-      <p>
-        I'm a freelance web developer and wordpress developer of <b>Archicoders.</b><br>
-        I am an undergrad student of <b>National College of Science and Technology</b> and I live in <b>Dasmari&ntilde;as Cavite, Philippines.</b>
-      </p>
-      <p>
-        I am <birthdate count>0</birthdate> years old and currently employed in <b>Archicoders</b> as Junior front-end developer<br>
-        I am currently in a <b>relationship</b> with <b>Erica Joy Arellano,</b> <daySince><span count>0</span> days ago.</daySince> :P
-      </p>
-      <br>
-      <button onclick="alert('website under maintenance')">My Portfolio</button>
-    </div>
-  </div>
+    <header>
+        <div class="row space-between ">
+            <div class="column align-center wrap flex-row space-between">
+                <div class="name-wrap">
+                    <span class="randomizedText">Reiniel</span><span class="accent randomizedText">.Tredes</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Intro</a></li>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="">Get in Touch!</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section id="banner">
+            <div class="row mw-650">
+                <div class="column">
+                    <div>
+                        <div class="sub_title_wrap">
+                            <div class="larger randomizedText">I'm</div>
+                        </div>
+                        <div class="title_wrap">
+                            <h1 class="accent typer">Reiniel Tredes</h1>
+                        </div>
+                    </div>
+                    <div class="intro_wrap">
+                        <p class="wbw_appear">a web enthusiast dedicated to crafting seamless digital experiences,
+                            specializing in JavaScript. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="scrollDown">
+                scroll down
+            </div>
+            <!-- Flying Boxes -->
+            <!-- <div class="animated-box main-box"></div>
+            <div class="animated-box inner-box"></div> -->
+        </section>
+        <section id="about-me">
+            <div class="row">
+                <div class="column">
+                    <div class="about-me">
+                        <h2>About me</h2>
+                        <p>I'm Reiniel Tredes, a dedicated professional in the field of web development. As a seasoned
+                            Team
+                            Leader, I bring a wealth of experience and expertise to the table, particularly in the realm
+                            of
+                            JavaScript.</p>
+                        <p class="mb-5">My passion lies in crafting innovative and efficient solutions through
+                            programming, and I
+                            thrive
+                            on the challenges that come with leading a development team.</p>
+
+                    </div>
+                    <div class="tech-stack">
+                        <h2 class="mb-5 will-appear">Tech Stack</h2>
+                        <div class="tag-style-wrap-outer mb-4 will-appear">
+                            <div class="tag-style-wrap" data-title="front-end">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>JavaScript</div>
+                                <div>GSAP</div>
+                                <div class="tag-style-border"></div>
+                            </div>
+                        </div>
+                        <div class="tag-style-wrap-outer mb-4 will-appear">
+                            <div class="tag-style-wrap" data-title="back-end">
+                                <div>JavaScript</div>
+                                <div>Firebase</div>
+                                <div>PHP</div>
+                                <div>SQL</div>
+                                <div>noSQL</div>
+                                <div class="tag-style-border"></div>
+                            </div>
+                        </div>
+                        <div class="tag-style-wrap-outer mb-4 will-appear">
+
+                            <div class="tag-style-wrap" data-title="cms">
+                                <div>Wordpress</div>
+                                <div>Webflow</div>
+                                <div>Framer</div>
+                                <div class="tag-style-border"></div>
+                            </div>
+                        </div>
+                        <div class="tag-style-wrap-outer mb-4 will-appear">
+                            <div class="tag-style-wrap" data-title="wordpress">
+                                <div>Elementor</div>
+                                <div>Divi</div>
+                                <div>Oxygen builder</div>
+                                <div class="tag-style-border"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div id="country">
+                        <img src="/assets/philippines.svg" alt="philippine map - Cavite Highlights">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="row">
+                <div class="column">
+                    <h2>My Projects</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="works-card-slider">
+                        <div class="works-card">
+                            <div class="works-card-header">
+                                <img src="/assets/static_images/placeholder.jpg" alt="" class="works-image">
+                            </div>
+                            <div class="works-card-body">
+                                <h3 class="works-card-title">Project</h3>
+                                <div class="works-card-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam distinctio a pariatur
+                                    tempore, nobis possimus eligendi atque, alias perspiciatis dolorum veritatis vitae
+                                    nostrum totam soluta sint nemo! Sapiente, deserunt esse.
+                                </div>
+                                <a href="" class="button tertiary">See project</a>
+                            </div>
+                        </div>
+                        <div class="works-card">
+                            <div class="works-card-header">
+                                <img src="/assets/static_images/placeholder.jpg" alt="" class="works-image">
+                            </div>
+                            <div class="works-card-body">
+                                <h3 class="works-card-title">Project</h3>
+                                <div class="works-card-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam distinctio a pariatur
+                                    tempore, nobis possimus eligendi atque, alias perspiciatis dolorum veritatis vitae
+                                    nostrum totam soluta sint nemo! Sapiente, deserunt esse.
+                                </div>
+                                <a href="" class="button tertiary">See project</a>
+                            </div>
+                        </div>
+                        <div class="works-card">
+                            <div class="works-card-header">
+                                <img src="/assets/static_images/placeholder.jpg" alt="" class="works-image">
+                            </div>
+                            <div class="works-card-body">
+                                <h3 class="works-card-title">Project</h3>
+                                <div class="works-card-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam distinctio a pariatur
+                                    tempore, nobis possimus eligendi atque, alias perspiciatis dolorum veritatis vitae
+                                    nostrum totam soluta sint nemo! Sapiente, deserunt esse.
+                                </div>
+                                <a href="" class="button tertiary">See project</a>
+                            </div>
+                        </div>
+                        <div class="works-card">
+                            <div class="works-card-header">
+                                <img src="/assets/static_images/placeholder.jpg" alt="" class="works-image">
+                            </div>
+                            <div class="works-card-body">
+                                <h3 class="works-card-title">Project</h3>
+                                <div class="works-card-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam distinctio a pariatur
+                                    tempore, nobis possimus eligendi atque, alias perspiciatis dolorum veritatis vitae
+                                    nostrum totam soluta sint nemo! Sapiente, deserunt esse.
+                                </div>
+                                <a href="" class="button tertiary">See project</a>
+                            </div>
+                        </div>
+                        <div class="works-card">
+                            <div class="works-card-header">
+                                <img src="/assets/static_images/placeholder.jpg" alt="" class="works-image">
+                            </div>
+                            <div class="works-card-body">
+                                <h3 class="works-card-title">Project</h3>
+                                <div class="works-card-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam distinctio a pariatur
+                                    tempore, nobis possimus eligendi atque, alias perspiciatis dolorum veritatis vitae
+                                    nostrum totam soluta sint nemo! Sapiente, deserunt esse.
+                                </div>
+                                <a href="" class="button tertiary">See project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
 
 </html>
